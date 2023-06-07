@@ -1,0 +1,561 @@
+@font-face {
+    font-family: "LakesRegullar";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lakes"),
+         url(fonts/TTLakes-Regular.eot) format("embedded-opentype"),
+         url(fonts/TTLakes-Regular.woff) format("woff"),
+         url(fonts/TTLakes-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "LakesBold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lakes"),
+         url(fonts/TTLakes-Bold.eot) format("embedded-opentype"),
+         url(fonts/TTLakes-Bold.woff) format("woff"),
+         url(fonts/TTLakes-Bold.ttf) format("truetype");
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+.body-container{
+    width: 320px; 
+    position: relative;
+    margin-right: auto;
+   margin-left: auto;
+}
+
+.header{
+   width: inherit;
+   height: 88px;
+}
+
+.header__main-container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    height: inherit;
+}
+
+.main-container{
+   display: flex;
+   justify-content: space-between;
+   background-color: #FFFFFF;
+   border-bottom: 1px solid #D9FFF5;
+}
+
+.header__first-subcontainer{
+    width: 53.5%;
+    height: inherit;
+}
+
+.first-subcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__second-subcontainer{
+    width: 46.5%;
+    height: inherit;
+}
+
+.second-subcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item{
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__menu-burger{
+    background-image: url(images/icons/burger.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.service__repair{
+    background-image: url(images/icons/repair.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.service__check-status{
+    background-image: url(images/icons/checkstatus.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.header__service{
+    width: 96px;
+    height: 40px;
+}
+
+.service{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__dividing-line{
+    display: flex;
+}
+
+.header__contact{
+    display: flex;
+}
+
+.dividing-line{
+    width: 2px;
+    height: 32px;
+    background: url("images/icons/divider.svg") no-repeat;
+    background-size: cover;
+}
+
+.header__dividing-line--for-tablet{
+    display: none;
+}
+
+.logo{
+    padding-right: 0.73px;
+    padding-left: 0.73px;
+}
+
+.main{
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F8F8F8;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.main__submenu-name{
+    width: inherit;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.submenu-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu-name__decor-element{
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: center;
+    background-image: url("images/highlight.svg");
+}
+
+.submenu-name__title{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: 40px;
+}
+
+.submenu-name__text{
+    font-family: "LakesBold";
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin: 0;
+}
+
+.main__submenu-items{
+    width: 90%;
+    min-height: 40px;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.submenu-items{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.submenu-items::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.submenu-items__link{
+    min-height: 40px;
+    margin-right: 6px;
+}
+
+.submenu-items__link{
+    margin-right: none;
+}
+
+.link{
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16.67px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: "LakesRegullar";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+}
+
+.link--active:hover, .link--active:focus{
+    border: 2px solid #B8FFEC;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.main__content{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__description{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__main-text{
+    width: 100%;
+    max-height: 90px;
+}
+
+.main-text{
+    font-family: "LakesRegullar";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.content__read-checker{
+    opacity: 0;
+    position: absolute;
+}
+
+.content__read-button{
+    width: 124px;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.read-button{
+    cursor: pointer;
+    display: flex;
+    background-image: url("images/icons/arrow.svg");
+    background-position: 6.45% 50%;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    font-family: "LakesRegullar";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.read-checker--checked:checked ~ .content__main-text{
+    max-height: none;
+}
+
+.read-checker--checked:checked ~ .content__read-button{
+    display: none;
+}
+
+.content__paragraf:first-child{
+    margin-top: 0;
+}
+
+.content__image{
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.main-image{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.content__welcome-picture{
+    width: 320px;
+    height: auto;
+}
+
+@media screen and (width>=768px){
+
+.body-container{
+    width: 768px;
+}
+
+.header__main-container{
+    width: 93.75%;
+}
+
+.header__first-subcontainer{
+    width: 56%;
+}
+
+.first-subcontainer{
+    justify-content: flex-start;
+}
+
+.header__second-subcontainer{
+    width: 44%;
+}
+
+.header__dividing-line--for-tablet{
+    display: flex;
+}
+
+.header__contact{
+    width: 152px;
+    height: 40px; 
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__phone{
+    background: url("images/icons/call.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.contact__message{
+    background: url("images/icons/chat.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.contact__profile{
+    background: url("images/icons/profile.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.header__menu-burger, .header__dividing-line--for-tablet{
+    margin-right: 20px;
+}
+
+.main__submenu-name{
+    margin-bottom: 32px;
+}
+
+.submenu-name__title{
+    width: 93.75%;
+}
+
+.main__submenu-items{
+    width: 93.75%;
+    margin-bottom: 32px;
+}
+
+.main__content{
+    width: 93.75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content{
+    flex-direction: row;
+}
+
+.content__description{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__main-text{
+    width: 312px;
+    max-height: 160px;
+}
+
+.main-text{
+    line-height: 20px;
+}
+
+.content__read-button{
+    margin-top: 10px;
+}
+
+.content__image{
+    width: 50%;
+    margin-bottom: 14.34px;
+}
+
+.main-image{
+    padding-top: 0;
+}
+
+.content__welcome-picture{
+    width: 360px;
+    height: auto;
+    border-radius: 10px;
+}
+}
+
+@media screen and (width>=1120px){
+   
+ .body-container{
+    width: 1120px;
+ }
+    
+.header{
+    position: absolute;
+    width: inherit;
+    visibility: hidden;
+}
+
+.header__service{
+    visibility: visible;
+    z-index: 20;
+    position: absolute;
+    right: 32px;
+    top: 42px;
+    width: 240px;
+}
+
+.service__repair{
+    background-image: url(images/icons/repair.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.service__repair::before{
+    content: "Оставить заявку";
+    right: 248px;
+}
+
+.service__check-status::before{
+    content: "Статус ремонта";
+    right: 48px;
+}
+
+.service__repair::before, .service__check-status::before{
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top: 8px;
+    font-family: "LakesBold";
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+}
+
+.main__submenu-name{
+    margin-top: 42px;
+    margin-bottom: 8.37px;
+}
+
+.submenu-name__title{
+    width: 94.3%;
+}
+
+.main__submenu-items{
+    width: 94.3%;
+    margin-bottom: 11.85px;
+}
+
+.submenu-items{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: visible;
+}
+
+.main__content{
+    width: 94.3%;
+}
+
+.content{
+    flex-direction: row;
+}
+
+.content__description{
+    width: inherit;
+}
+
+.content__main-text{
+    width: 490px;
+    max-height: 160px;
+}
+
+.main-text{
+    line-height: 20px;
+}
+
+.content__read-button{
+    margin-top: 13.78px;
+}
+
+.content__image{
+    width: 531.35px;
+    margin-bottom: 11.13px;
+}
+
+.main-image{
+    padding-top: 0;
+    padding-bottom: 50px;
+}     
+
+.content__welcome-picture{
+    width: 531.35px;
+    height: auto;
+    border-radius: 10px;
+}
+}
+
+
