@@ -1,0 +1,38 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+    background-color: beige;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.maket-list{
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item{
+    margin-bottom: 20px;
+}
+
+.link{
+    color:darkgreen;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.link:hover{
+    color:darkslategrey;
+    text-decoration: underline;
+}
