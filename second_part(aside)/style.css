@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "LakesRegullar";
+    src:
+    local("Lakes Regular"),
+    url(fonts/TTLakes-Regular.eot) format("embedded-opentype"),
+    url(fonts/TTLakes-Regular.woff) format("woff"),
+    url(fonts/TTLakes-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "LakesBold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lakes Bold"),
+         url(fonts/TTLakes-Bold.eot) format("embedded-opentype"),
+         url(fonts/TTLakes-Bold.woff) format("woff"),
+         url(fonts/TTLakes-Bold.ttf) format("truetype");
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aside{
+    width: 320px;
+    height: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 
+    -2px 0px 4px rgba(69, 79, 126, 0.02), 
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.container__aside{
+    width: 272px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__container{
+    width: inherit;
+    height: 86px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.button__header{
+    width: 40px;
+    height: 40px;
+}
+
+.button{
+    display: flex;
+}
+
+.button-close{
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    background: url("images/icons/burger-close.svg") no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.button-find{
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    background: url("images/icons/search.svg") no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.logo__header{
+    width: 97px;
+    height: 51px;
+    margin-left: 16.73px;
+    margin-right: auto;
+}
+
+.logo{
+    background: url("images/icons/logo.svg") no-repeat;
+}
+
+.main__container{
+    width: 100%;
+    min-height: 349.32px;
+    height: 53.25%;
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: top;
+}
+
+.navigation__main{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: top;
+}
+
+.item__navigation{
+    display: flex;
+    margin-bottom: 2.95vh;
+}
+
+.item__navigation:last-child{
+    margin-bottom: none; 
+}
+
+.item{
+    font-family: "LakesRegular", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px; 
+    text-align: left;
+    position: relative;
+}
+
+.link{
+    text-decoration: none;
+    color: #1B1C21;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.link::before{
+    content: '';
+    background: url("images/decor-element.svg") no-repeat;
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    top: -5px;
+    left: -24px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.item:hover > .link::before, .item:focus > .link::before{
+    opacity: 1;
+}
+
+.item:hover > .link, .item:focus > .link{
+    color: #7E7E82;
+}
+
+.footer__container{
+    width: 100%;
+    height: 188px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.contacts__footer{
+    width: 152px;
+    height: 40px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-phone{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url("images/icons/phone.svg") no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.button-message{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url("images/icons/chat.svg") no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.button-login{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url("images/icons/profile.svg") no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.email__footer{
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.email{
+    font-family: "LakesRegular";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px; 
+    text-align: left;
+}
+
+.phone-number__footer{
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.phone-number{
+    font-family: "LakesBold";
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+}
+
+.choose-language__footer{
+    margin: 0;
+    margin-bottom: 32px;
+    width: 86px;
+    justify-content: space-between;
+}
+
+.choose-language{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.language{
+    font-family: "LakesRegular";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-transform: uppercase;
+}
+
+.language--select{
+    color: #7E7E82;
+}
+
+@media screen and (height<676px) {
+
+.aside{
+    min-height: 0;
+    max-height: 675px;
+    overflow-y: auto;
+    flex-shrink: 0;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.main__container{
+    height: 349.32px;
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.aside::-webkit-scrollbar {
+    display: none;
+  }
+
+.item__navigation{
+    margin-bottom: 20px;
+}    
+}
+
+@media screen and (height>=1024px) {
+
+.main__container{
+    height: 53.25%;
+    margin-top: 33px;
+}
+
+.footer__container{
+    height: 220px;
+}
+
+.phone-number__footer{
+    margin-bottom: 40px;
+}
+
+.choose-language__footer{
+    margin: 0;
+    margin-bottom: 32px;
+    width: 86px;
+    justify-content: space-between;
+}
+}
+
+
+
+
+
+
+
+
+
+
