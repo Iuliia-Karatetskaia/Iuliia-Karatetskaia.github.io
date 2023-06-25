@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "LakesRegullar";
+    src:
+    local("Lakes Regular"),
+    url(fonts/TTLakes-Regular.eot) format("embedded-opentype"),
+    url(fonts/TTLakes-Regular.woff) format("woff"),
+    url(fonts/TTLakes-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "LakesBold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lakes Bold"),
+         url(fonts/TTLakes-Bold.eot) format("embedded-opentype"),
+         url(fonts/TTLakes-Bold.woff) format("woff"),
+         url(fonts/TTLakes-Bold.ttf) format("truetype");
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 320px;
+    width: 100%;
+    max-width: 1550px;
+    height: 100%;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+}
+
+.equipment-repair{
+    width: inherite;
+    height: 234px;
+    position: relative;
+}
+
+.equipment-repair__title{
+    width: inherite;
+    height: 80px;
+}
+
+.title{
+    display: flex;
+    background: linear-gradient(270deg, #FFF 0%,  #F8F8F8 100%);
+    border-top: 1px solid #D9FFF5;
+}
+
+.title__text{
+    margin: 16px 5%;
+    margin-right: auto;
+}
+
+.text{
+    display: inline-block;
+    color: #7E7E82;
+    font-size: 16px;
+    font-family: "LakesRegullar";
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+
+.equipment-repair__container{
+    width: 90%;
+    margin: 0 auto;
+    height: 104px;
+}
+
+.container{
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.container__slide{
+    position: relative;
+    display: flex;
+}
+
+.swiper-slide{
+    width: auto;
+}
+
+.container__button{
+    display: flex;
+    width: 240px;
+    height: 72px;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    background-color: #FFF;
+    background-position: 16px 50%;
+}
+
+.container__slide::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(images/goArrow.svg);
+    left: 184px;
+    top: 16px;
+}
+
+.button-lenovo{
+    background-image: url(images/Lenovo.png); 
+}
+
+.button-samsung{
+    background-image: url(images/samsung.png);
+}
+
+.button-apple{
+    background-image: url(images/apple.png);
+}
+
+.button-viewSonic{
+    background-image: url(images/viewSonic.png);
+}
+
+.button-bosch{
+    background-image: url(images/bosch.png);
+}
+
+.button-hp{
+    background-image: url(images/hp.png);
+}
+
+.button-accer{
+    background-image: url(images/acer.png);
+}
+
+.button-sony{
+    background-image: url(images/sony.png);
+}
+
+.container .swiper-pagination{
+    top: 183px;
+}
+
+.container .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color:#B5B6BC;
+}
+
+.pagination--hidden{
+    display: none;
+}
+
+.equipment-repair__button-read{
+    display: none;
+}
+
+@media screen and (width>=768px)
+{
+
+*{
+    position: static;
+    z-index: 0;
+}
+
+.equipment-repair{
+    height: 322px;
+    position: relative;
+}
+    
+.equipment-repair__title{
+    height: 56px;
+}
+
+.title__text{
+    margin: 16px 3%;
+}
+
+.equipment-repair__container{
+    width: 94%;
+    min-height: 176px;
+    margin: 24px auto;
+}
+
+.container{
+    overflow: hidden;
+}
+
+.container__wrapper{
+    align-content: top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container__slide{
+    width: 224px;
+    height: 72px;
+    margin-right: 20px;
+    margin-bottom: 17px;
+}
+
+.container__slide:nth-child(3n){
+    margin-right: 0; 
+}
+
+.container__slide::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(images/goArrow.svg);
+    left: 168px;
+    top: 16px;
+}
+
+.equipment-repair__button-read{
+    width: 94%;
+    height: 24px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.button-read{
+    display: block;
+}
+
+.button{
+    display:inline-block;
+    margin-left: 33px;
+    margin-top: 0;
+    color: #1B1C21;
+    font-size: 16px;
+    font-family: "LakesBold";
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.button-read::before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("images/openArrow.svg");
+    display: inline-block;
+    left: 0px;
+}
+
+.container--expand{
+    height: 340px;
+}
+
+.button-read--active::before{ 
+    transform: rotate(180deg);
+}
+}
+
+@media screen and (width>=1017px)
+{
+.container__slide:nth-child(3n){
+    margin-right: 20px;
+    margin-bottom: 17px;
+} 
+
+.container__slide:nth-child(4n){
+    margin-right: 0; 
+}
+
+.container--expand{
+    height: 260px;
+}
+}
+
+@media screen and (width>=1277px)
+{
+.container__slide:nth-child(4n){
+    margin-right: 20px;
+    margin-bottom: 17px;
+} 
+
+.container__slide:nth-child(5n){
+    margin-right: 0; 
+}
+}
+
+@media screen and (width>=1537px)
+{
+.container__slide:nth-child(5n){
+    margin-right: 20px;
+    margin-bottom: 17px;
+} 
+
+.container__slide:nth-child(6n){
+    margin-right: 0;
+}
+
+.equipment-repair__button-read{
+    display: none;
+}
+
+.container--expand{
+    height: 176px;
+}
+}
