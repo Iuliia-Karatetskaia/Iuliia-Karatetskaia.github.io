@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  border-bottom: 1px solid $light-green;
+
+  @media screen and (min-width: 1330px) {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  &__centerer {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      width: 93.75%;
+    }
+  }
+
+  &__right-subcontainer {
+    width: 53.5%;
+    height: inherit;
+
+    @media screen and (min-width: 768px) {
+      width: 56%;
+    }
+  }
+
+  &__logo {
+    width: auto;
+    height: auto;
+  }
+
+  &__left-subcontainer {
+    width: 46.5%;
+    height: inherit;
+
+    @media screen and (min-width: 768px) {
+      width: 44%;
+    }
+  }
+
+  &__typical-button {
+    width: 40px;
+    height: 40px;
+  }
+}

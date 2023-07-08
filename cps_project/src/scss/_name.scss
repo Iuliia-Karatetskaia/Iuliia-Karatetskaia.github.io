@@ -1,0 +1,25 @@
+.name {
+  width: inherit;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  align-self: start;
+  padding-top: 20px;
+
+  &::before {
+    content: 'Ремонтные услуги';
+    position: absolute;
+    top: 0;
+    color: $grey;
+    font-size: 14px;
+    font-family: 'LakesMedium';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    opacity: 0.72;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}

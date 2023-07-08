@@ -1,0 +1,50 @@
+.make-button {
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $pink;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  color: $white;
+  font-size: 12px;
+  font-family: 'LakesBold';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('../img/decorative/goside.svg');
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    right: 8px;
+  }
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    display: inline-block;
+    width: 67px;
+    height: 24px;
+    color: $white;
+    font-size: 12px;
+    font-family: 'LakesBold';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    width: inherit;
+    height: inherit;
+  }
+}

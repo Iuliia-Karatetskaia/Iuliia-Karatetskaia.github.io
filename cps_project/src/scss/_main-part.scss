@@ -1,0 +1,50 @@
+.main-part {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-grey;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  height: inherit;
+
+  &__header {
+    width: 100%;
+    height: 88px;
+  }
+
+  &__centerer {
+    width: 90%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+      width: 93.75%;
+    }
+
+    @media screen and (min-width: 1330px) {
+      width: 93.9%;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  &__footer {
+    width: 100%;
+    margin-top: 40px;
+    min-height: 85px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 47px;
+      height: 115px;
+    }
+
+    @media screen and (min-width: 1330px) {
+      margin-top: 50px;
+      height: 95px;
+    }
+  }
+}

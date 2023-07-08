@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+  height: auto;
+
+  &__submenu {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__content {
+    width: inherit;
+    height: inherit;
+  }
+}

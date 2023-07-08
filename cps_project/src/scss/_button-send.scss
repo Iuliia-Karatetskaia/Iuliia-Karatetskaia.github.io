@@ -1,0 +1,11 @@
+.button-send {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: flex-end;
+
+  &__make-button {
+    width: 136px;
+    height: 32px;
+  }
+}

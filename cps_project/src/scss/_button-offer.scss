@@ -1,0 +1,29 @@
+.button-offer {
+  display: inline-block;
+  width: auto;
+  color: &black;
+  font-size: 16px;
+  font-family: 'LakesMedium';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  position: relative;
+  text-align: left;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/decorative/arrow_pink.svg);
+    bottom: 0;
+    left: 107px;
+
+    @media screen and (min-width: 339px) {
+      top: 2px;
+      left: 300px;
+    }
+  }
+}

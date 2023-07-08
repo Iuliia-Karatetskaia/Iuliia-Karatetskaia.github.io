@@ -1,0 +1,15 @@
+.right-subcontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__typical-button {
+    width: 40px;
+    height: 40px;
+    margin-right: 16.73px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 42.73px;
+    }
+  }
+}

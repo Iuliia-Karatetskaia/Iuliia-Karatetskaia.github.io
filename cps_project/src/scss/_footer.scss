@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  border-top: 1px solid $light-green;
+  flex-direction: column;
+  color: $grey;
+  font-size: 14px;
+  font-family: 'LakesMedium';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  height: auto;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  &__copyright {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: 30.3%;
+      text-align: start;
+      margin-top: 32px;
+    }
+
+    @media screen and (min-width: 1330px) {
+      width: 20.6%;
+    }
+  }
+
+  &__confidention-politic {
+    display: flex;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: 29.7%;
+      margin-top: 32px;
+    }
+
+    @media screen and (min-width: 1330px) {
+      width: 20.3%;
+    }
+  }
+
+  &__additional-info {
+    display: flex;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: 29.6%;
+      text-align: end;
+      margin-top: 32px;
+    }
+
+    @media screen and (min-width: 1330px) {
+      width: 31.2%;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.service-block {
+  display: flex;
+  width: 96px;
+  height: 40px;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    @media screen and (min-width: 768px) {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: -20px;
+      width: 2px;
+      height: 32px;
+      background-image: url(../img/decorative/divider.svg);
+      z-index: 2;
+    }
+  }
+
+  @media screen and (min-width: 1330px) {
+    visibility: visible;
+    z-index: 5;
+    position: absolute;
+    right: 32px;
+    top: 42px;
+    width: 240px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__list {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1330px) {
+      &::before {
+        content: 'Оставить заявку';
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 20px;
+        position: absolute;
+        top: 8px;
+        right: 248px;
+        font-family: 'LakesMedium';
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        font-weight: 500;
+      }
+
+      &:last-child::after {
+        content: 'Статус ремонта';
+        display: inline-block;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 20px;
+        position: absolute;
+        top: 8px;
+        right: 48px;
+        font-family: 'LakesMedium';
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+}

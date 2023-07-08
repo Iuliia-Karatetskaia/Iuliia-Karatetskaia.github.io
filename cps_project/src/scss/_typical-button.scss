@@ -1,0 +1,45 @@
+.typical-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__item {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.5s;
+    background-repeat: no-repeat;
+
+    &:hover {
+      transform: scale(1.1);
+      transform-origin: 50% 50%;
+    }
+
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &--divider {
+    &::after {
+      @media screen and (min-width: 768px) {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        width: 2px;
+        height: 32px;
+        background-image: url(../img/decorative/divider.svg);
+      }
+    }
+  }
+
+  &--unvisible {
+    @media screen and (min-width: 1330px) {
+      display: none;
+    }
+  }
+}

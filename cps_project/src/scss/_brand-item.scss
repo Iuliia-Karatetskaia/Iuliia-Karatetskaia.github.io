@@ -1,0 +1,73 @@
+.brand-item {
+  position: relative;
+  display: flex;
+  width: 240px;
+  height: 72px;
+
+  @media screen and (min-width: 768px) {
+    width: 224px;
+  }
+
+  &::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../img/decorative/go_arrows.svg);
+    left: 184px;
+    top: 16px;
+
+    @media screen and (min-width: 768px) {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      background-image: url(../img/decorative/go_arrows.svg);
+      left: 168px;
+      top: 16px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    width: 240px;
+    height: 72px;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    background-position: 16px 50%;
+
+    &--lenovo {
+      background-image: url(../img/brands/Lenovo.png);
+    }
+
+    &--samsung {
+      background-image: url(../img/brands/samsung.png);
+    }
+
+    &--apple {
+      background-image: url(../img/brands/apple.png);
+    }
+
+    &--viewSonic {
+      background-image: url(../img/brands/viewSonic.png);
+    }
+
+    &--bosh {
+      background-image: url(../img/brands/bosch.png);
+    }
+
+    &--hp {
+      background-image: url(../img/brands/hp.png);
+    }
+
+    &--accer {
+      background-image: url(../img/brands/acer.png);
+    }
+
+    &--sony {
+      background-image: url(../img/brands/sony.png);
+    }
+  }
+}

@@ -1,0 +1,242 @@
+.price-list {
+  width: 100%;
+  margin-top: 24px;
+  position: relative;
+  height: auto;
+  min-width: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 1330px) {
+    margin-top: 50px;
+  }
+
+  .swiper-pagination {
+    bottom: 0px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $medium-grey;
+  }
+
+  &__title-container {
+    width: inherit;
+    height: 80px;
+
+    @media screen and (min-width: 768px) {
+      height: 56px;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 238px;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-top: 16px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      height: 390px;
+      margin-top: 20px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 16px 24px;
+
+    @media screen and (min-width: 768px) {
+      height: inherit;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0;
+    }
+  }
+
+  &__first-row {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: 100%;
+      height: 65px;
+      margin: 0;
+      color: $grey;
+      font-size: 14px;
+      font-family: 'LakesMedium';
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      opacity: 0.72;
+      background-color: $light-grey;
+      box-sizing: border-box;
+    }
+  }
+
+  &__block-name {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+      @media screen and (min-width: 768px) {
+        width: 54%;
+      }
+
+      @media screen and (min-width: 1330px) {
+        width: 46.5%;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (min-width: 768px) {
+        width: 14%;
+      }
+
+      @media screen and (min-width: 1330px) {
+        width: 22.5%;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (min-width: 768px) {
+        width: 32%;
+      }
+
+      @media screen and (min-width: 1330px) {
+        width: 31%;
+      }
+    }
+  }
+
+  &__next-row {
+    display: flex;
+    width: 260px;
+    height: 200px;
+    color: $black;
+    font-size: 14px;
+    font-family: 'LakesRegular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: $white;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      height: 65px;
+    }
+  }
+
+  &__value {
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      height: 100%;
+      border-bottom: 1px solid $very-light-grey;
+      align-items: center;
+    }
+
+    &:nth-child(1) {
+      @media screen and (min-width: 768px) {
+        width: 54%;
+      }
+
+      @media screen and (min-width: 1330px) {
+        width: 46.5%;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (min-width: 768px) {
+        width: 14%;
+        white-space: nowrap;
+      }
+
+      @media screen and (min-width: 1330px) {
+        width: 22.5%;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (min-width: 768px) {
+        width: 14.7%;
+        white-space: nowrap;
+      }
+
+      @media screen and (min-width: 1330px) {
+        width: 19.2%;
+      }
+    }
+
+    &:nth-child(4) {
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 16px;
+      @media screen and (min-width: 768px) {
+        width: 17.3%;
+        position: static;
+      }
+
+      @media screen and (min-width: 1330px) {
+        width: 11.8%;
+      }
+    }
+
+    &--border-none {
+      @media screen and (min-width: 768px) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__additional-info {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    margin: 16px 0;
+    color: $black;
+    font-size: 14px;
+    font-family: 'LakesRegular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+
+    @media screen and (min-width: 768px) {
+      width: 421px;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+
+  &__get-offer {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.show-all {
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: -32px;
+    background-image: url(../img/decorative/arrow_green.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: inherit;
+    height: 1px;
+    background-color: $grey;
+    position: absolute;
+    left: 2px;
+    bottom: -15px;
+    opacity: 0;
+    transition: all 0.7s 0.3s;
+  }
+
+  &:hover::after {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+
+  &--active::before {
+    transform: rotate(180deg);
+  }
+
+  &__button {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    color: $black;
+    font-size: 16px;
+    font-family: 'LakesMedium';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}
