@@ -1285,7 +1285,7 @@ html {
         border-radius: 10px; } }
 
 .show-all {
-  display: inline-block;
+  display: flex;
   position: relative; }
   .show-all::before {
     content: '';
