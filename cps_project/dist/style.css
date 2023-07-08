@@ -1256,7 +1256,7 @@ html {
   .content__last-paragraf {
     margin-bottom: 0; }
   .content__show-all {
-    width: 110px;
+    width: auto;
     height: 24px;
     margin-top: 16px;
     margin-left: 32px;
