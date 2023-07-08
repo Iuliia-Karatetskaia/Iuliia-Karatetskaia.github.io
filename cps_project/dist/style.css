@@ -1853,7 +1853,8 @@ html {
   line-height: 24px;
   letter-spacing: -0.2px;
   position: relative;
-  text-align: left; }
+  text-align: left;
+  padding-left: 0;}
   .button-offer::after {
     content: '';
     position: absolute;
