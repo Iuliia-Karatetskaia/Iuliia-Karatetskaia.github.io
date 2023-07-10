@@ -1307,16 +1307,13 @@ html {
     left: 2px;
     bottom: -15px;
     opacity: 0;
-    @media screen and (min-width: 768px) {
-    transition: all 0.7s 0.3s; }}
+    transition: all 0.7s 0.3s; }
   .show-all:hover::after {
-     @media screen and (min-width: 768px) {
     transform: translateY(-15px);
-    opacity: 1; }}
+    opacity: 1; }
    .show-all:focus::after {
-     @media screen and (min-width: 768px) {
     transform: translateY(-15px);
-    opacity: 1;}}
+    opacity: 1;}
   .show-all--active::before {
     transform: rotate(180deg); }
   .show-all__button {
