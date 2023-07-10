@@ -1286,6 +1286,7 @@ html {
 
 .show-all {
   display: flex;
+  justify-content: center;
   position: relative; }
   .show-all::before {
     content: '';
