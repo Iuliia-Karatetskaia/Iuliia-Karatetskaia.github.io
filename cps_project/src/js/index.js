@@ -6,11 +6,11 @@ import '../scss/style.scss'
 import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
 
-var init = false
-var firstSwiper
-var secondSwiper
-var thirdSwiper
-var paginationStatus = document.getElementsByClassName('swiper-pagination')
+let init = false
+let firstSwiper
+let secondSwiper
+let thirdSwiper
+let paginationStatus = document.getElementsByClassName('swiper-pagination')
 
 function swiperCard() {
   if (window.innerWidth <= 768) {
@@ -87,40 +87,35 @@ const firstContainer = document.querySelector('.content__text')
 const secondContainer = document.querySelector('.brand-list__container')
 const thirdContainer = document.querySelector('.equipment-list__container')
 
-let firstButton = {
-  buttonShow,
-  button,
-  container: firstContainer,
-  condition: true
-}
-let secondButton = {
-  buttonShow,
-  button,
-  container: secondContainer,
-  condition: true
-}
+let arrayButton = [
+  {
+    buttonShow,
+    button,
+    container: firstContainer,
+    condition: true
+  },
 
-let thirdButton = {
-  buttonShow,
-  button,
-  container: thirdContainer,
-  condition: true
-}
+  {
+    buttonShow,
+    button,
+    container: secondContainer,
+    condition: true
+  },
 
-for (let i = 0; i < buttonShow.length; i++) {
-  if (i === 0) {
-    firstButton.buttonShow = buttonShow[i]
-    firstButton.button = button[i]
+  {
+    buttonShow,
+    button,
+    container: thirdContainer,
+    condition: true
   }
-  if (i === 1) {
-    secondButton.buttonShow = buttonShow[i]
-    secondButton.button = button[i]
-  }
-  if (i === 2) thirdButton.buttonShow = buttonShow[i]
-  thirdButton.button = button[i]
+]
+
+for (let i = 0; i < arrayButton.length; i++) {
+  arrayButton[i].buttonShow = buttonShow[i]
+  arrayButton[i].button = button[i]
 }
 
-var buttonClick = function (object) {
+let buttonClick = function (object) {
   object.button.addEventListener('click', function () {
     if (object.condition) {
       object.container.classList.add('container--expand')
@@ -136,16 +131,16 @@ var buttonClick = function (object) {
   })
 }
 
-buttonClick(firstButton)
-buttonClick(secondButton)
-buttonClick(thirdButton)
+for (let i = 0; i < arrayButton.length; i++) {
+  buttonClick(arrayButton[i])
+}
 
 const openBurger = document.querySelector('.burger-menu')
 const body = document.querySelector('.body')
 const mainMenu = document.querySelector('.container__wrapper-menu')
-const requestCall = document.getElementsByClassName('phone')
+let requestCall = document.getElementsByClassName('phone')
 const call = document.querySelector('.container__wrapper-call')
-const feedbackSend = document.getElementsByClassName('chat')
+let feedbackSend = document.getElementsByClassName('chat')
 const feedback = document.querySelector('.container__wrapper-feedback')
 
 let unlock = true
